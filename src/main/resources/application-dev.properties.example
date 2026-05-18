@@ -1,0 +1,14 @@
+server.port=8080
+
+spring.datasource.url=${SUPPLYTRACE_DB_URL:jdbc:postgresql://localhost:5432/supplytrace}
+spring.datasource.username=${SUPPLYTRACE_DB_USERNAME:postgres}
+spring.datasource.password=${SUPPLYTRACE_DB_PASSWORD:}
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=false
+
+supplytrace.crawler.user-agent=${SUPPLYTRACE_USER_AGENT:SupplyTraceBot/1.0}
+supplytrace.crawler.timeout-ms=${SUPPLYTRACE_TIMEOUT_MS:12000}
+
+supplytrace.scheduling.scan-delay-ms=${SUPPLYTRACE_SCAN_DELAY_MS:86400000}
+supplytrace.scheduling.scan-initial-delay-ms=${SUPPLYTRACE_SCAN_INITIAL_DELAY_MS:60000}
