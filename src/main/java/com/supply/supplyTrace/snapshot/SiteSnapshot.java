@@ -40,7 +40,6 @@ public class SiteSnapshot {
     @JoinColumn(name = "site_id", nullable = false)
     private MonitoredSite site;
 
-    @Lob
     @Column(nullable = false, columnDefinition = "TEXT")
     private String snapshotJson;
 
